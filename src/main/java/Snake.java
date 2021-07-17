@@ -37,7 +37,7 @@ public class Snake {
     }
 
     public void eat(){
-        parts.add(new Part().copyOf(parts.get(parts.size() - 1)));
+        parts.add(Part.copyOf(parts.get(parts.size() - 1)));
     }
 
     public boolean doesMett(Part part){

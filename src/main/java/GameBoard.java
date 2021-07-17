@@ -17,10 +17,8 @@ public class GameBoard {
 
     private void foodAtRandomPosition() {
         Random r = new Random();
-        int randomX = r.nextInt(39) + 1;
-        int randomY = r.nextInt(39) + 1;
-        food.setX(randomX);
-        food.setY(randomY);
+        food.setX(r.nextInt(39) + 1);
+        food.setY(r.nextInt(39) + 1);
         food.draw();
     }
 
@@ -38,17 +36,14 @@ public class GameBoard {
 
             if (StdDraw.isKeyPressed(KeyEvent.VK_UP)){
                 snake.goUp();
-
             }
 
             if (StdDraw.isKeyPressed(KeyEvent.VK_LEFT)){
                 snake.goLeft();
-
             }
 
             if (StdDraw.isKeyPressed(KeyEvent.VK_RIGHT)){
                 snake.goRight();
-
             }
 
             StdDraw.clear();

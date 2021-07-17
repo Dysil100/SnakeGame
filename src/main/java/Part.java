@@ -29,15 +29,13 @@ public class Part {
         this.y = y;
     }
 
-    public Part copyOf(Part part){
-        x = part.getX();
-        y = part.getY();
-        return this;
+    public static Part copyOf(Part part){
+        return new Part(part.getX(), part.getY());
     }
 
     public void goTo(Part part) {
-        this.setX(part.getX());
-        this.setY(part.getY());
+        setX(part.getX());
+        setY(part.getY());
     }
 
     public void draw(){
