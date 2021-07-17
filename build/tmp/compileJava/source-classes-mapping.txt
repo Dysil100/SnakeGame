@@ -5,9 +5,9 @@ Unit.java
  Unit
 Part.java
  Part
-SnakeGame.java
- SnakeGame
-GameBoard.java
- GameBoard
 Snake.java
  Snake
+GameBoard.java
+ GameBoard
+SnakeGame.java
+ SnakeGame

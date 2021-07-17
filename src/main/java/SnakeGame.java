@@ -5,7 +5,7 @@ public  class SnakeGame {
         GameBoard board = new GameBoard();
         board.init();
         board.run();
-        
+
     }
 
 }
