@@ -1,11 +1,27 @@
 StdDraw.java
  StdDraw
  StdDraw$RetinaImageIcon
-Part.java
- Part
-Snake.java
- Snake
+Configuration.java
+ Configuration
+Head.java
+ Head
 SnakeGame.java
  SnakeGame
 GameBoard.java
  GameBoard
+Snake.java
+ Snake
+Unit.java
+ Unit
+Food.java
+ Food
+BodyPart.java
+ BodyPart
+Part.java
+ Part
+Scale.java
+ Scale
+Canvas.java
+ Canvas
+Element.java
+ Element
