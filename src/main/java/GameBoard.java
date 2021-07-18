@@ -47,7 +47,7 @@ public class GameBoard {
 
             StdDraw.clear();
             drawComponents();
-            StdDraw.show(1);
+            StdDraw.show(10);
             sleep();
         }
 
