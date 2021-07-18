@@ -7,5 +7,4 @@ public  class SnakeGame {
         board.run();
 
     }
-
 }

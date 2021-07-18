@@ -4,11 +4,18 @@ import java.util.stream.IntStream;
 
 public class Snake {
     private final List<Part> parts = new ArrayList<>();
-    private final Part head;
+    private final Head head;
+    private final Unit unit;
 
-    public Snake() {
-        parts.addAll(List.of(new Part(), new Part(20, 19), new Part(20, 18)));
-        head  = parts.get(0);
+
+    public Snake(int allXPosition, int allYPosition, Unit unit) {
+        this.unit = unit;
+        double xCenter = allXPosition >> 1;
+        double yCenter = allYPosition >> 1;
+        head  = new Head();
+        parts.addAll(List.of(head,
+                new BodyPart(xCenter, yCenter - unit.mesureOf1Unit, "up"),
+                new BodyPart(xCenter, yCenter - unit.unitsOf(2), "up")));
     }
 
     private void moveRestParts() {
@@ -17,22 +24,26 @@ public class Snake {
     }
 
     public void goDown(){
-        head.setY(head.getY() - 1);
+        head.setY(head.getY() - unit.mesureOf1Unit);
+        head.setDirection("down");
         moveRestParts();
     }
 
     public void goUp(){
-        head.setY(head.getY() + 1);
+        head.setY(head.getY() + unit.mesureOf1Unit);
+        head.setDirection("up");
         moveRestParts();
     }
 
     public void goLeft(){
-        head.setX(head.getX() - 1);
+        head.setX(head.getX() - unit.mesureOf1Unit);
+        head.setDirection("left");
         moveRestParts();
     }
 
     public void goRight(){
-        head.setX(head.getX() + 1);
+        head.setX(head.getX() + unit.mesureOf1Unit);
+        head.setDirection("right");
         moveRestParts();
     }
 
@@ -44,8 +55,9 @@ public class Snake {
         return (head.getX() == part.getX() && head.getY() == part.getY());
     }
 
-    public void draw() {
-        parts.forEach(Part::draw);
+    public void draw(Unit unit) {
+        parts.forEach(p -> p.draw(unit));
+        head.draw(unit);
     }
 
 }
