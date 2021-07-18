@@ -13,10 +13,4 @@ public class Unit {
         return mesureOf1Unit * length;
     }
 
-    @Override
-    public String toString() {
-        return "Unit{" +
-                "mesureOf1Unit=" + mesureOf1Unit +
-                '}';
-    }
 }
