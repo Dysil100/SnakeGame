@@ -11,8 +11,7 @@ public class GameBoard {
         StdDraw.setXscale(0, 40);
         StdDraw.setYscale(0, 40);
         isAlive = true;
-        snake.draw();
-        food.draw();
+        drawComponents();
     }
 
     private void foodAtRandomPosition() {
@@ -47,15 +46,20 @@ public class GameBoard {
             }
 
             StdDraw.clear();
-            snake.draw();
-            food.draw();
+            drawComponents();
+            StdDraw.show(1);
             sleep();
         }
 
     }
 
+    private void drawComponents() {
+        snake.draw();
+        food.draw();
+    }
+
     private static void sleep() throws InterruptedException {
-        Thread.sleep(10);
+        Thread.sleep(50);
     }
 
 }

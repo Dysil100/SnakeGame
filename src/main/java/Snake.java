@@ -3,12 +3,12 @@ import java.util.List;
 import java.util.stream.IntStream;
 
 public class Snake {
-    private final Part head;
     private final List<Part> parts = new ArrayList<>();
+    private final Part head;
 
     public Snake() {
-        head  = new Part();
-        parts.addAll(List.of(head, new Part(20, 19), new Part(20, 18)));
+        parts.addAll(List.of(new Part(), new Part(20, 19), new Part(20, 18)));
+        head  = parts.get(0);
     }
 
     private void moveRestParts() {
