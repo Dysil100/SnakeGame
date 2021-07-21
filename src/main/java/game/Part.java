@@ -1,7 +1,11 @@
+package game;
+
+import config.Unit;
+import libraries.StdDraw;
 
 public abstract class Part implements Element {
-    double x;
-    double y;
+    public double x;
+    public double y;
     String direction;
 
     public Part(double x, double y, String direction) {
@@ -50,28 +54,29 @@ public abstract class Part implements Element {
         setDirection(part.getDirection());
     }
 
-    public  void draw(Unit unit){
-            double[] xS;
-            double[] yS;
+    public void draw(Unit unit){
+            double[] xS; double[] yS;
         if ("right".equals(direction)) {
-            xS = new double[]{x + unit.unitsOf(0.75), x - unit.unitsOf(.5), x - unit.unitsOf(.5)};
-            yS = new double[]{y, y - unit.unitsOf(.5), y + unit.unitsOf(.5)};
-            //StdDraw.filledSquare(x, y, .60);
+            xS = new double[]{x + unit.mesureOf(0.75), x - unit.mesureOf(.5), x - unit.mesureOf(.5)};
+            yS = new double[]{y, y - unit.mesureOf(.5), y + unit.mesureOf(.5)};
             StdDraw.filledPolygon(xS, yS);
-        }if ("left".equals(direction)) {
-            xS = new double[]{x - unit.unitsOf(0.75), x + unit.unitsOf(.5), x + unit.unitsOf(.5)};
-            yS = new double[]{y, y - unit.unitsOf(.5), y + unit.unitsOf(.5)};
-            //StdDraw.filledSquare(x, y, .60);
+        }
+
+        if ("left".equals(direction)) {
+            xS = new double[]{x - unit.mesureOf(0.75), x + unit.mesureOf(.5), x + unit.mesureOf(.5)};
+            yS = new double[]{y, y - unit.mesureOf(.5), y + unit.mesureOf(.5)};
             StdDraw.filledPolygon(xS, yS);
-        }if ("up".equals(direction)) {
-            xS = new double[]{x, x - unit.unitsOf(.5), x + unit.unitsOf(.5)};
-            yS = new double[]{y  + unit.unitsOf(0.75), y - unit.unitsOf(.5), y - unit.unitsOf(.5)};
-            //StdDraw.filledSquare(x, y, .60);
+        }
+
+        if ("up".equals(direction)) {
+            xS = new double[]{x, x - unit.mesureOf(.5), x + unit.mesureOf(.5)};
+            yS = new double[]{y  + unit.mesureOf(0.75), y - unit.mesureOf(.5), y - unit.mesureOf(.5)};
             StdDraw.filledPolygon(xS, yS);
-        }if ("down".equals(direction)) {
-            xS = new double[]{x, x - unit.unitsOf(.5), x + unit.unitsOf(.5)};
-            yS = new double[]{y  - unit.unitsOf(0.75), y + unit.unitsOf(.5), y + unit.unitsOf(.5)};
-            //StdDraw.filledSquare(x, y, .60);
+        }
+
+        if ("down".equals(direction)) {
+            xS = new double[]{x, x - unit.mesureOf(.5), x + unit.mesureOf(.5)};
+            yS = new double[]{y  - unit.mesureOf(0.75), y + unit.mesureOf(.5), y + unit.mesureOf(.5)};
             StdDraw.filledPolygon(xS, yS);
         }
     }

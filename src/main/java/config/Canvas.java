@@ -1,3 +1,5 @@
+package config;
+
 public class Canvas {
      int width;
      int higth;
@@ -10,5 +12,4 @@ public class Canvas {
     public Canvas() {
         this(600, 600);
     }
-
 }

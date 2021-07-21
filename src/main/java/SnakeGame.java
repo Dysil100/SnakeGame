@@ -1,3 +1,5 @@
+import config.GameBoard;
+
 public  class SnakeGame {
 
     public static void main(String[] args) throws InterruptedException {
@@ -7,4 +9,5 @@ public  class SnakeGame {
         board.run();
 
     }
+
 }

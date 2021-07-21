@@ -1,21 +1,25 @@
+package game;
+
+import config.Unit;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.IntStream;
 
 public class Snake {
-    private final List<Part> parts = new ArrayList<>();
-    private final Head head;
-    private final Unit unit;
+    /*private*/ public final List<Part> parts = new ArrayList<>();
+    /*private*/ public final Head head;
+    /*private*/ final Unit unit;
 
 
-    public Snake(int allXPosition, int allYPosition, Unit unit) {
+    public Snake(double allXPosition, double allYPosition, Unit unit) {
         this.unit = unit;
-        double xCenter = allXPosition >> 1;
-        double yCenter = allYPosition >> 1;
-        head  = new Head();
+        int xCenter = (int) (allXPosition / 2);
+        int yCenter = (int) (allYPosition / 2);
+        head  = new Head(unit.mesureOf(xCenter), unit.mesureOf(yCenter), "up");
         parts.addAll(List.of(head,
-                new BodyPart(xCenter, yCenter - unit.mesureOf1Unit, "up"),
-                new BodyPart(xCenter, yCenter - unit.unitsOf(2), "up")));
+                new BodyPart(unit.mesureOf(xCenter), unit.mesureOf(xCenter - 1), "up"),
+                new BodyPart(unit.mesureOf(xCenter), unit.mesureOf(yCenter - 2), "up")));
     }
 
     private void moveRestParts() {
@@ -60,4 +64,7 @@ public class Snake {
         head.draw(unit);
     }
 
+    public void doesDie() {
+        System.out.println("Your score ist : " + (parts.size() - 3) + "\n");
+    }
 }

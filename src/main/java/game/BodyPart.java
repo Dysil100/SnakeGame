@@ -1,3 +1,8 @@
+package game;
+
+import config.Unit;
+import libraries.StdDraw;
+
 public class BodyPart extends Part implements Element{
     
     public BodyPart(double x) {
@@ -12,5 +17,4 @@ public class BodyPart extends Part implements Element{
         StdDraw.setPenColor(StdDraw.GREEN);
         super.draw(unit);
     }
-
 }

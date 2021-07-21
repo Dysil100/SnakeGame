@@ -12,12 +12,24 @@
       <change beforePath="$PROJECT_DIR$/.gradle/6.8/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.8/javaCompile/classAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.8/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.8/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/GameBoard.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/GameBoard.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Part.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Part.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Snake.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Snake.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/GameBoard.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Part.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Snake.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/source-classes-mapping.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/source-classes-mapping.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/BodyPart.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Canvas.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Configuration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Element.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Food.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/GameBoard.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Head.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Part.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Scale.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Snake.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SnakeGame.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/StdDraw.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Unit.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,13 +115,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -133,6 +147,7 @@
       <workItem from="1626476583881" duration="19337000" />
       <workItem from="1626529135954" duration="10830000" />
       <workItem from="1626627181130" duration="142000" />
+      <workItem from="1626891217673" duration="366000" />
     </task>
     <servers />
   </component>
