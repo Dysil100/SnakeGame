@@ -13,11 +13,11 @@
       <change beforePath="$PROJECT_DIR$/.gradle/6.8/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.8/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/config/Configuration.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/config/Configuration.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/config/GameBoard.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/config/GameBoard.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/game/Snake.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/game/Snake.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/source-classes-mapping.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/source-classes-mapping.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/config/Configuration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/config/Configuration.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/config/GameBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/config/GameBoard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/game/Snake.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/game/Snake.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -149,7 +149,7 @@
       <workItem from="1626627181130" duration="142000" />
       <workItem from="1626891217673" duration="1123000" />
       <workItem from="1626954046949" duration="114000" />
-      <workItem from="1626958600181" duration="4074000" />
+      <workItem from="1626958600181" duration="5480000" />
     </task>
     <servers />
   </component>

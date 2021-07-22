@@ -5,21 +5,20 @@ import game.Snake;
 import libraries.StdDraw;
 
 import java.awt.event.KeyEvent;
-import java.util.List;
 import java.util.Random;
 
 public class GameBoard {
     Boolean isAlive;
     Configuration config = new Configuration();
-    Snake snake = new Snake(config.allXPosition, config.allYPosition, config.unit);
+    Snake snake = new Snake(config.getAllXPosition(), config.getAllYPosition(), config.getUnit());
     Food food =  new Food();
-    int showTime = 200;
+    int showTime = 50;
     private String currentDirection;
 
     public void init(){
-        StdDraw.setCanvasSize(config.canvas.width, config.canvas.higth);
-        StdDraw.setXscale(config.scale.xLelft, config.scale.xRigth);
-        StdDraw.setYscale(config.scale.yDown, config.scale.yUp);
+        StdDraw.setCanvasSize(config.getCanvas().width, config.getCanvas().higth);
+        StdDraw.setXscale(config.getScale().xLelft, config.getScale().xRigth);
+        StdDraw.setYscale(config.getScale().yDown, config.getScale().yUp);
         isAlive = true;
         currentDirection = "up";
         drawComponents();
@@ -49,9 +48,9 @@ public class GameBoard {
 
             if (snakeDoesDie()){
                 StdDraw.setPenColor(StdDraw.RED);
-                StdDraw.text(config.unit.mesureOf(config.allXPosition / 2), config.unit.mesureOf(config.allYPosition / 2), "Game Over");
+                StdDraw.text(config.getUnit().mesureOf(config.getAllXPosition() >> 1), config.getUnit().mesureOf(config.getAllYPosition() >> 1), "Game Over");
                 StdDraw.setPenColor(StdDraw.GREEN);
-                StdDraw.text(config.unit.mesureOf((config.allXPosition / 2)), config.unit.mesureOf((config.allYPosition / 2) - 1), snake.doesDie());
+                StdDraw.text(config.getUnit().mesureOf(config.getAllXPosition() >> 1), config.getUnit().mesureOf((config.getAllYPosition() >> 1) - 1), snake.doesDie());
                 isAlive = false;
             }
             StdDraw.show(showTime);
@@ -59,19 +58,22 @@ public class GameBoard {
 
     }
 
+    private void newGame() throws InterruptedException {
+    }
+
     private boolean snakeDoesDie() {
-        return snake.head.getX() > config.scale.xRigth - config.unit.mesureOf1Unit || snake.head.getY() > config.scale.yUp - config.unit.mesureOf1Unit||
-         snake.head.getX() < config.scale.xLelft + config.unit.mesureOf1Unit || snake.head.getY() < config.scale.yDown + config.unit.mesureOf1Unit /* || (snake.parts.stream().map(p -> List.of(p.x, p.y)).distinct().count() != (snake.parts.size()))*/;
+        return snake.head.getX() > config.getScale().xRigth - config.getUnit().mesureOf1Unit || snake.head.getY() > config.getScale().yUp - config.getUnit().mesureOf1Unit||
+         snake.head.getX() < config.getScale().xLelft + config.getUnit().mesureOf1Unit || snake.head.getY() < config.getScale().yDown + config.getUnit().mesureOf1Unit;
     }
 
     private void foodAtRandomPosition() {
         Random r = new Random();
-        food.setX(config.unit.mesureOf(r.nextInt((config.allXPosition - 1) ) + 1));
-        food.setY(config.unit.mesureOf(r.nextInt((config.allYPosition - 1) ) + 1));
+        food.setX(config.getUnit().mesureOf(r.nextInt((config.getAllXPosition() - 1) ) + 1));
+        food.setY(config.getUnit().mesureOf(r.nextInt((config.getAllYPosition() - 1) ) + 1));
     }
 
     private void drawComponents() {
-        snake.draw(config.unit);
-        food.draw(config.unit);
+        snake.draw(config.getUnit());
+        food.draw(config.getUnit());
     }
 }
