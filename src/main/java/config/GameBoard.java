@@ -13,13 +13,15 @@ public class GameBoard {
     Configuration config = new Configuration();
     Snake snake = new Snake(config.allXPosition, config.allYPosition, config.unit);
     Food food =  new Food();
-    int showTime = 100;
+    int showTime = 200;
+    private String currentDirection;
 
     public void init(){
         StdDraw.setCanvasSize(config.canvas.width, config.canvas.higth);
         StdDraw.setXscale(config.scale.xLelft, config.scale.xRigth);
         StdDraw.setYscale(config.scale.yDown, config.scale.yUp);
         isAlive = true;
+        currentDirection = "up";
         drawComponents();
         StdDraw.show();
     }
@@ -33,22 +35,18 @@ public class GameBoard {
                 foodAtRandomPosition();
             }
 
-            if (StdDraw.isKeyPressed(KeyEvent.VK_DOWN)){
-                snake.goDown();
-            }
+            //snake.goDown();
+            if (StdDraw.isKeyPressed(KeyEvent.VK_DOWN)) currentDirection = "down";
 
-            if (StdDraw.isKeyPressed(KeyEvent.VK_UP)){
-                snake.goUp();
-            }
+            //snake.goUp();
+            if (StdDraw.isKeyPressed(KeyEvent.VK_UP)) currentDirection = "up";
 
-            if (StdDraw.isKeyPressed(KeyEvent.VK_LEFT)){
-                snake.goLeft();
-            }
+            //snake.goLeft();
+            if (StdDraw.isKeyPressed(KeyEvent.VK_LEFT)) currentDirection = "left";
 
-            if (StdDraw.isKeyPressed(KeyEvent.VK_RIGHT)){
-                snake.goRight();
-            }
-
+            //snake.goRight();
+            if (StdDraw.isKeyPressed(KeyEvent.VK_RIGHT)) currentDirection = "right";
+            snake.walk(currentDirection);
             StdDraw.clear();
             drawComponents();
 

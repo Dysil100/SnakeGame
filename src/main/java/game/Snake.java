@@ -1,7 +1,6 @@
 package game;
 
 import config.Unit;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.IntStream;
@@ -11,7 +10,6 @@ public class Snake {
      public final Head head;
      final Unit unit;
 
-
     public Snake(double allXPosition, double allYPosition, Unit unit) {
         this.unit = unit;
         int xCenter = (int) (allXPosition / 2);
@@ -20,6 +18,18 @@ public class Snake {
         parts.addAll(List.of(head,
                 new BodyPart(unit.mesureOf(xCenter), unit.mesureOf(xCenter - 1), "up"),
                 new BodyPart(unit.mesureOf(xCenter), unit.mesureOf(yCenter - 2), "up")));
+    }
+
+    public void walk(String direction){
+        if ("down".equals(direction)){
+            goDown();
+        }if ("up".equals(direction)){
+            goUp();
+        }if ("left".equals(direction)){
+            goLeft();
+        }if ("right".equals(direction)){
+            goRight();
+        }
     }
 
     private void moveRestParts() {
