@@ -7,9 +7,9 @@ import java.util.List;
 import java.util.stream.IntStream;
 
 public class Snake {
-    /*private*/ public final List<Part> parts = new ArrayList<>();
-    /*private*/ public final Head head;
-    /*private*/ final Unit unit;
+     public final List<Part> parts = new ArrayList<>();
+     public final Head head;
+     final Unit unit;
 
 
     public Snake(double allXPosition, double allYPosition, Unit unit) {
