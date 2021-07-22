@@ -19,9 +19,9 @@ game/BodyPart.java
  game.BodyPart
 game/Food.java
  game.Food
-game/Snake.java
- game.Snake
 SnakeGame.java
  SnakeGame
+game/Snake.java
+ game.Snake
 config/GameBoard.java
  config.GameBoard

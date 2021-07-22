@@ -74,7 +74,7 @@ public class Snake {
         head.draw(unit);
     }
 
-    public void doesDie() {
-        System.out.println("Your score ist : " + (parts.size() - 3) + "\n");
+    public String doesDie() {
+        return "Your score ist : " + (parts.size() - 3) + "\n";
     }
 }

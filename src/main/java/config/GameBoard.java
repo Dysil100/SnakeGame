@@ -48,10 +48,10 @@ public class GameBoard {
             drawComponents();
 
             if (snakeDoesDie()){
-                snake.doesDie();
                 StdDraw.setPenColor(StdDraw.RED);
-                StdDraw.setPenRadius(.0001);
                 StdDraw.text(config.unit.mesureOf(config.allXPosition / 2), config.unit.mesureOf(config.allYPosition / 2), "Game Over");
+                StdDraw.setPenColor(StdDraw.GREEN);
+                StdDraw.text(config.unit.mesureOf((config.allXPosition / 2)), config.unit.mesureOf((config.allYPosition / 2) - 1), snake.doesDie());
                 isAlive = false;
             }
             StdDraw.show(showTime);
