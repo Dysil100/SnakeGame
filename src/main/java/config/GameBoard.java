@@ -35,17 +35,14 @@ public class GameBoard {
                 foodAtRandomPosition();
             }
 
-            //snake.goDown();
             if (StdDraw.isKeyPressed(KeyEvent.VK_DOWN)) currentDirection = "down";
 
-            //snake.goUp();
             if (StdDraw.isKeyPressed(KeyEvent.VK_UP)) currentDirection = "up";
 
-            //snake.goLeft();
             if (StdDraw.isKeyPressed(KeyEvent.VK_LEFT)) currentDirection = "left";
 
-            //snake.goRight();
             if (StdDraw.isKeyPressed(KeyEvent.VK_RIGHT)) currentDirection = "right";
+
             snake.walk(currentDirection);
             StdDraw.clear();
             drawComponents();
@@ -58,7 +55,6 @@ public class GameBoard {
                 isAlive = false;
             }
             StdDraw.show(showTime);
-
         }
 
     }
@@ -84,5 +80,4 @@ public class GameBoard {
         Snake snake = new Snake(config.allXPosition, config.allYPosition, new Unit());
         System.out.println(snake.parts.stream().map(p -> List.of(p.x, p.y)).distinct().count() == snake.parts.size());
     }
-
 }
