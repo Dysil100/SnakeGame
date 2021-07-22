@@ -3,8 +3,8 @@ libraries/StdDraw.java
  libraries.StdDraw$RetinaImageIcon
 config/Canvas.java
  config.Canvas
-SnakeGame.java
- SnakeGame
+game/Head.java
+ game.Head
 config/Scale.java
  config.Scale
 config/Unit.java
@@ -17,11 +17,11 @@ game/Element.java
  game.Element
 config/Configuration.java
  config.Configuration
-game/Snake.java
- game.Snake
 game/BodyPart.java
  game.BodyPart
+SnakeGame.java
+ SnakeGame
+game/Snake.java
+ game.Snake
 config/GameBoard.java
  config.GameBoard
-game/Head.java
- game.Head

@@ -22,13 +22,17 @@ public class Snake {
 
     public void walk(String direction){
         if ("down".equals(direction)){
-            goDown();
+            if ((!head.direction.equals("up"))) goDown();
+            else goUp();
         }if ("up".equals(direction)){
-            goUp();
+            if (!head.direction.equals("down")) goUp();
+            else goDown();
         }if ("left".equals(direction)){
-            goLeft();
+            if (!head.direction.equals("right")) goLeft();
+            else goRight();
         }if ("right".equals(direction)){
-            goRight();
+            if (!head.direction.equals("left"))goRight();
+            else goLeft();
         }
     }
 

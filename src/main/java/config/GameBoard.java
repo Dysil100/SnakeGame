@@ -74,10 +74,4 @@ public class GameBoard {
         snake.draw(config.unit);
         food.draw(config.unit);
     }
-
-    public static void main(String[] args) {
-        Configuration config = new Configuration();
-        Snake snake = new Snake(config.allXPosition, config.allYPosition, new Unit());
-        System.out.println(snake.parts.stream().map(p -> List.of(p.x, p.y)).distinct().count() == snake.parts.size());
-    }
 }
