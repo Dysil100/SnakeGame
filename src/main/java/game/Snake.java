@@ -21,15 +21,10 @@ public class Snake {
     }
 
     public void walk(String direction){
-        if ("down".equals(direction)){
-            goDown();
-        }if ("up".equals(direction)){
-            goUp();
-        }if ("left".equals(direction)){
-            goLeft();
-        }if ("right".equals(direction)){
-            goRight();
-        }
+        if ("down".equals(direction)) goDown();
+        if ("up".equals(direction)) goUp();
+        if ("left".equals(direction)) goLeft();
+        if ("right".equals(direction)) goRight();
     }
 
     private void moveRestParts() {
