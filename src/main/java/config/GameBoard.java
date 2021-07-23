@@ -34,13 +34,7 @@ public class GameBoard {
                 foodAtRandomPosition();
             }
 
-            if (StdDraw.isKeyPressed(KeyEvent.VK_DOWN)) currentDirection = "down";
-
-            if (StdDraw.isKeyPressed(KeyEvent.VK_UP)) currentDirection = "up";
-
-            if (StdDraw.isKeyPressed(KeyEvent.VK_LEFT)) currentDirection = "left";
-
-            if (StdDraw.isKeyPressed(KeyEvent.VK_RIGHT)) currentDirection = "right";
+            checkDircetion();
 
             snake.walk(currentDirection);
             StdDraw.clear();
@@ -58,7 +52,18 @@ public class GameBoard {
 
     }
 
-    private void newGame() throws InterruptedException {
+    private void checkDircetion() {
+        if (StdDraw.isKeyPressed(KeyEvent.VK_DOWN))
+            if (!"up".equals(currentDirection)) currentDirection = "down";
+
+        if (StdDraw.isKeyPressed(KeyEvent.VK_UP))
+            if (!"down".equals(currentDirection)) currentDirection = "up";
+
+        if (StdDraw.isKeyPressed(KeyEvent.VK_LEFT))
+            if (!"right".equals(currentDirection)) currentDirection = "left";
+
+        if (StdDraw.isKeyPressed(KeyEvent.VK_RIGHT))
+            if (!"left".equals(currentDirection)) currentDirection =  "right";
     }
 
     private boolean snakeDoesDie() {

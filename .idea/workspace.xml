@@ -6,6 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="069ce056-de8c-4afb-8c19-eaace691a881" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/config/GameBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/config/GameBoard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/game/Snake.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/game/Snake.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,6 +106,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Snake" />
@@ -128,6 +141,8 @@
       <workItem from="1626954046949" duration="114000" />
       <workItem from="1626958600181" duration="5632000" />
       <workItem from="1626984080000" duration="211000" />
+      <workItem from="1627026006720" duration="195000" />
+      <workItem from="1627031230854" duration="727000" />
     </task>
     <servers />
   </component>

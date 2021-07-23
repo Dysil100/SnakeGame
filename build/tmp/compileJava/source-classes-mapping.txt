@@ -15,12 +15,12 @@ game/Food.java
  game.Food
 game/Element.java
  game.Element
-game/Snake.java
- game.Snake
-game/BodyPart.java
- game.BodyPart
 config/Configuration.java
  config.Configuration
+game/BodyPart.java
+ game.BodyPart
+game/Snake.java
+ game.Snake
 SnakeGame.java
  SnakeGame
 config/GameBoard.java
