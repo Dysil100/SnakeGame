@@ -22,8 +22,4 @@ public class Scale {
         xSize = xRigth - xLelft;
         ySize = yUp - yDown;
     }
-
-    public static void main(String[] args) {
-        System.out.println(new Scale());
-    }
 }
