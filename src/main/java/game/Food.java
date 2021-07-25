@@ -10,7 +10,8 @@ public class Food extends Part implements Element{
     }
 
     public Food() {
-        super();
+        x = 21;
+        y = 21;
     }
 
     @Override

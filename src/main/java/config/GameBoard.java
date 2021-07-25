@@ -10,9 +10,9 @@ import java.util.Random;
 public class GameBoard {
     Boolean isAlive;
     Configuration config = new Configuration();
-    Snake snake = new Snake(config.getAllXPosition(), config.getAllYPosition(), config.getUnit());
+    Snake snake;
     Food food =  new Food();
-    int showTime = 50;
+    int showTime = 100;
     private String currentDirection;
 
     public void init(){
@@ -20,6 +20,7 @@ public class GameBoard {
         StdDraw.setXscale(config.getScale().xLelft, config.getScale().xRigth);
         StdDraw.setYscale(config.getScale().yDown, config.getScale().yUp);
         isAlive = true;
+        snake = new Snake(config.getAllXPosition(), config.getAllYPosition(), config.getUnit());
         currentDirection = "up";
         drawComponents();
         StdDraw.show();
@@ -27,29 +28,43 @@ public class GameBoard {
 
 
     public void run() throws InterruptedException {
-
         while (isAlive){
             if (snake.doesMett(food)){
                 snake.eat();
                 foodAtRandomPosition();
             }
-
             checkDircetion();
-
             snake.walk(currentDirection);
             StdDraw.clear();
             drawComponents();
-
             if (snakeDoesDie()){
-                StdDraw.setPenColor(StdDraw.RED);
-                StdDraw.text(config.getUnit().mesureOf(config.getAllXPosition() >> 1), config.getUnit().mesureOf(config.getAllYPosition() >> 1), "Game Over");
-                StdDraw.setPenColor(StdDraw.GREEN);
-                StdDraw.text(config.getUnit().mesureOf(config.getAllXPosition() >> 1), config.getUnit().mesureOf((config.getAllYPosition() >> 1) - 1), snake.doesDie());
+                write();
                 isAlive = false;
             }
             StdDraw.show(showTime);
+            checkStage();
         }
 
+    }
+
+    private void write() {
+        StdDraw.setPenColor(StdDraw.RED);
+        StdDraw.text(config.getUnit().mesureOf(config.getAllXPosition() >> 1), config.getUnit().mesureOf(config.getAllYPosition() >> 1), "Game Over");
+        StdDraw.setPenColor(StdDraw.GREEN);
+        StdDraw.text(config.getUnit().mesureOf(config.getAllXPosition() >> 1), config.getUnit().mesureOf((config.getAllYPosition() >> 1) - 1), snake.doesDie());
+    }
+
+    private void checkStage() throws InterruptedException {
+        if (!isAlive) {
+            while (true) {
+                if (StdDraw.isKeyPressed(KeyEvent.VK_ENTER)) {
+                    isAlive = true;
+                    init();
+                    run();
+                    return;
+                }
+            }
+        }
     }
 
     private void checkDircetion() {
