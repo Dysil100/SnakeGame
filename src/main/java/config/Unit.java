@@ -4,7 +4,7 @@ public class Unit {
     public double mesureOf1Unit;
 
     public Unit() {
-        this(1.0);
+        this.mesureOf1Unit = 2;
     }
 
     public Unit(double mesureUnits) {

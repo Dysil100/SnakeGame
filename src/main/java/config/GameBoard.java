@@ -8,11 +8,13 @@ import java.awt.event.KeyEvent;
 import java.util.Random;
 
 public class GameBoard {
+     int level ;
+     int score;
     Boolean isAlive;
     Configuration config = new Configuration();
     Snake snake;
     Food food =  new Food();
-    int showTime = 100;
+    int showTime;
     private String currentDirection;
 
     public void init(){
@@ -20,6 +22,9 @@ public class GameBoard {
         StdDraw.setXscale(config.getScale().xLelft, config.getScale().xRigth);
         StdDraw.setYscale(config.getScale().yDown, config.getScale().yUp);
         isAlive = true;
+        level = 0;
+        score = 0;
+         showTime = 110;
         snake = new Snake(config.getAllXPosition(), config.getAllYPosition(), config.getUnit());
         currentDirection = "up";
         drawComponents();
@@ -31,6 +36,7 @@ public class GameBoard {
         while (isAlive){
             if (snake.doesMett(food)){
                 snake.eat();
+                score++;
                 foodAtRandomPosition();
             }
             checkDircetion();
@@ -42,9 +48,17 @@ public class GameBoard {
                 isAlive = false;
             }
             StdDraw.show(showTime);
+            updatelevel();
             checkStage();
         }
 
+    }
+
+    private void updatelevel() {
+        if ((score / 10 > level)) {
+            level = level + 1;
+            showTime-= 10;
+        }
     }
 
     private void write() {
@@ -52,6 +66,8 @@ public class GameBoard {
         StdDraw.text(config.getUnit().mesureOf(config.getAllXPosition() >> 1), config.getUnit().mesureOf(config.getAllYPosition() >> 1), "Game Over");
         StdDraw.setPenColor(StdDraw.GREEN);
         StdDraw.text(config.getUnit().mesureOf(config.getAllXPosition() >> 1), config.getUnit().mesureOf((config.getAllYPosition() >> 1) - 1), snake.doesDie());
+        StdDraw.setPenColor(StdDraw.PINK);
+        StdDraw.text(config.getUnit().mesureOf(config.getAllXPosition() >> 1), config.getUnit().mesureOf((config.getAllYPosition() >> 1) - 2), "Level: " + level);
     }
 
     private void checkStage() throws InterruptedException {
