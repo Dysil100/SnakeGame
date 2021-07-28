@@ -27,7 +27,6 @@ public class GameBoard {
          showTime = 110;
         snake = new Snake(config.getAllXPosition(), config.getAllYPosition(), config.getUnit());
         currentDirection = "up";
-        drawComponents();
         StdDraw.show();
     }
 
@@ -42,7 +41,7 @@ public class GameBoard {
             checkDircetion();
             snake.walk(currentDirection);
             StdDraw.clear();
-            drawComponents();
+            drawBoard();
             if (snakeDoesDie()){
                 write();
                 isAlive = false;
@@ -77,7 +76,7 @@ public class GameBoard {
                     isAlive = true;
                     init();
                     run();
-                    return;
+                    break;
                 }
             }
         }
@@ -94,7 +93,7 @@ public class GameBoard {
             if (!"right".equals(currentDirection)) currentDirection = "left";
 
         if (StdDraw.isKeyPressed(KeyEvent.VK_RIGHT))
-            if (!"left".equals(currentDirection)) currentDirection =  "right";
+            if (!"left".equals(currentDirection)) currentDirection = "right";
     }
 
     private boolean snakeDoesDie() {
@@ -108,7 +107,11 @@ public class GameBoard {
         food.setY(config.getUnit().mesureOf(r.nextInt((config.getAllYPosition() - 1) ) + 1));
     }
 
-    private void drawComponents() {
+    private void drawBoard() {
+        StdDraw.setPenColor(StdDraw.GREEN);
+        StdDraw.text(config.getUnit().mesureOf(config.getAllXPosition() >> 2), config.getUnit().mesureOf((config.getAllYPosition() - .5)), "Level: " + level);
+        StdDraw.setPenColor(StdDraw.BLUE);
+        StdDraw.text(config.getUnit().mesureOf((config.getAllXPosition() >> 1) + 5 ), config.getUnit().mesureOf((config.getAllYPosition() - .5)), "your Score ist : " + score);
         snake.draw(config.getUnit());
         food.draw(config.getUnit());
     }

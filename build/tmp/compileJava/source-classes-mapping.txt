@@ -3,16 +3,16 @@ libraries/StdDraw.java
  libraries.StdDraw$RetinaImageIcon
 config/Canvas.java
  config.Canvas
-game/Food.java
- game.Food
+game/Head.java
+ game.Head
 config/Scale.java
  config.Scale
 config/Unit.java
  config.Unit
 game/Part.java
  game.Part
-game/Head.java
- game.Head
+game/Food.java
+ game.Food
 game/Element.java
  game.Element
 config/Configuration.java
