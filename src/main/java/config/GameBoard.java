@@ -1,8 +1,6 @@
-package config;
+/*package config;
 
-import game.Food;
-import game.Snake;
-import libraries.StdDraw;
+
 
 import java.awt.event.KeyEvent;
 import java.util.Random;
@@ -115,4 +113,4 @@ public class GameBoard {
         snake.draw(config.getUnit());
         food.draw(config.getUnit());
     }
-}
+}*/

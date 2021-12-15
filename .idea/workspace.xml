@@ -10,52 +10,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="069ce056-de8c-4afb-8c19-eaace691a881" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/game/GameFrame.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/game/board/GameBoard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/game/board/Snake.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/game/elements/BodyPart.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/game/elements/Element.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/game/elements/Food.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/game/elements/Head.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/game/elements/Part.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.8/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.8/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.8/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.8/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.8/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.8/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.8/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.8/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.8/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.8/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/SnakeGame.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/SnakeGame.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/config/Canvas.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/config/Canvas.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/config/Configuration.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/config/Configuration.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/config/GameBoard.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/config/Scale.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/config/Scale.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/config/Unit.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/config/Unit.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/game/BodyPart.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/game/BodyPart.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/game/Element.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/game/Element.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/game/Food.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/game/Food.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/game/Head.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/game/Head.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/game/Part.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/game/Part.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/game/Snake.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/game/Snake.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/libraries/StdDraw$RetinaImageIcon.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/libraries/StdDraw.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/source-classes-mapping.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/source-classes-mapping.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/SnakeGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SnakeGame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/config/GameBoard.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/game/BodyPart.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/game/Element.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/game/Food.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/game/Head.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/game/Part.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/game/Snake.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/libraries/StdDraw.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/config/GameBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/config/GameBoard.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -244,7 +207,7 @@
       <workItem from="1634901227738" duration="85000" />
       <workItem from="1636577148975" duration="2205000" />
       <workItem from="1636630297548" duration="591000" />
-      <workItem from="1639521129887" duration="4763000" />
+      <workItem from="1639521129887" duration="5612000" />
     </task>
     <servers />
   </component>
