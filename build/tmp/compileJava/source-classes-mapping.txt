@@ -1,10 +1,5 @@
-libraries/StdDraw.java
- libraries.StdDraw
- libraries.StdDraw$RetinaImageIcon
 config/Unit.java
  config.Unit
-game/Part.java
- game.Part
 SnakeGame.java
  SnakeGame
 config/Scale.java
@@ -13,15 +8,20 @@ config/Canvas.java
  config.Canvas
 config/Configuration.java
  config.Configuration
-game/Snake.java
- game.Snake
-game/BodyPart.java
- game.BodyPart
-config/GameBoard.java
- config.GameBoard
-game/Food.java
- game.Food
-game/Element.java
- game.Element
-game/Head.java
- game.Head
+game/board/Snake.java
+ game.board.Snake
+game/GameFrame.java
+ game.GameFrame
+game/elements/Food.java
+ game.elements.Food
+game/board/GameBoard.java
+ game.board.GameBoard
+ game.board.GameBoard$MykeyAdapter
+game/elements/Part.java
+ game.elements.Part
+game/elements/Element.java
+ game.elements.Element
+game/elements/Head.java
+ game.elements.Head
+game/elements/BodyPart.java
+ game.elements.BodyPart
