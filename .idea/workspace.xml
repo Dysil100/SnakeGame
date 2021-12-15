@@ -10,21 +10,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="069ce056-de8c-4afb-8c19-eaace691a881" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/SnakeGame.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/config/Canvas.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/config/Configuration.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/config/GameBoard.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/config/Scale.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/config/Unit.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/game/GameFrame.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/game/board/GameBoard.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/game/board/Snake.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/game/elements/BodyPart.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/game/elements/Element.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/game/elements/Food.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/game/elements/Head.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/game/elements/Part.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/SnakeGame.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/SnakeGame.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/config/Canvas.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/config/Canvas.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/config/Configuration.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/config/Configuration.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/config/Scale.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/config/Scale.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/config/Unit.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/config/Unit.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -213,7 +206,7 @@
       <workItem from="1634901227738" duration="85000" />
       <workItem from="1636577148975" duration="2205000" />
       <workItem from="1636630297548" duration="591000" />
-      <workItem from="1639521129887" duration="6584000" />
+      <workItem from="1639521129887" duration="7005000" />
     </task>
     <servers />
   </component>
